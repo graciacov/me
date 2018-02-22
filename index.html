@@ -79,9 +79,12 @@ body, html {
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">GRACIA COVARRUBIAS PRIETO</span>
-  </div>
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">GRACIA COVARRUBIAS PRIETO</span>
+    </div> 
+    <div class="w3-display-bottommiddle" style="white-space:nowrap;">
+        <span> <img src="images/monogram3.png" class="w3-center w3-padding-large w3-large w3-wide"></span>
+    </div>
 </div>
 
 <!-- Container (About Section) -->
@@ -263,45 +266,62 @@ body, html {
   <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
+  
+  <div class="w3-row-padding w3-column-padding w3-center">
     <div class="w3-col m3">
-      <img src="images/portafolio/skate.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <img src="images/portafolio/skate.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-margin-top" alt="LONGBOARD">
+      <div class="w3-container w3-light-grey">
+      <h6>LONGBOARD</h6>
+      </div>
     </div>
 
     <div class="w3-col m3">
-      <img src="images/portafolio/afiche.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <img src="images/portafolio/lampara.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-margin-top" alt="Coffee beans">
+      <div class="w3-container w3-light-grey">
+      <h6>AUTOBIOGRAFÍAS</h6>
+      </div>
     </div>
 
     <div class="w3-col m3">
-      <img src="images/portafolio/caratula.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      <img src="images/portafolio/caratula.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-margin-top" alt="Bear closeup">
+      <div class="w3-container w3-light-grey">
+      <h6>CARÁTULA</h6>
+      </div>
     </div>
 
     <div class="w3-col m3">
-      <img src="images/portafolio/editorial.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
-
-    <div class="w3-col m3">
-      <img src="images/portafolio/urke.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      <img src="images/portafolio/editorial.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-margin-top" alt="Quiet ocean">
+      <div class="w3-container w3-light-grey">
+      <h6>PORTADAS BIOGRAFÍAS</h6>
+      </div>
     </div>
 
     <div class="w3-col m3">
-      <img src="images/portafolio/pattern.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      <img src="images/portafolio/urke.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-margin-top" alt="My beloved typewriter">
+      <div class="w3-container w3-light-grey">
+      <h6>PACKAGING ÜRKE</h6>
+      </div>
     </div>
 
     <div class="w3-col m3">
-      <img src="images/portafolio/lampara.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      <img src="images/portafolio/pattern.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-margin-top" alt="Empty ghost train">
+      <div class="w3-container w3-light-grey">
+      <h6>PATRONAJE DE MONOGRAMA</h6>
+      </div>
     </div>
+   
     <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
+
 </div>
 
+
 <!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+<div id="modal01" class="w3-modal w3-sand" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-hover-pale-red w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
+
   </div>
 </div>
 
@@ -367,7 +387,7 @@ body, html {
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  myCenter=new google.maps.LatLng(-33.447487, -70.673676);
   var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: false, draggable: false,
@@ -410,7 +430,7 @@ function toggleFunction() {
     }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvUJM_rWvem5uyt4wc7t7avUu_rebTgy0&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
