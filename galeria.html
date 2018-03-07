@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<title> Gracia Covarrubias - Galeria </title>
+	<link rel="icon" type="image/png" href="images/monogram.png" />
+	<style>
+			* {
+			    box-sizing: border-box;
+			}
+
+			body {
+			    margin: 0;
+			    font-family: Lato;
+			}
+
+			.header {
+			    text-align: center;
+			    padding: 32px;
+			}
+
+			.row {
+			    display: -ms-flexbox; /* IE10 */
+			    display: flex;
+			    -ms-flex-wrap: wrap; /* IE10 */
+			    flex-wrap: wrap;
+			    padding: 0 4px;
+			}
+
+			/* Create four equal columns that sits next to each other */
+			.column {
+			    -ms-flex: 25%; /* IE10 */
+			    flex: 25%;
+			    max-width: 25%;
+			    padding: 0 4px;
+			}
+
+			.column img {
+			    margin-top: 8px;
+			    vertical-align: middle;
+			}
+
+			/* Responsive layout - makes a two column-layout instead of four columns */
+			@media (max-width: 800px) {
+			    .column {
+			        -ms-flex: 50%;
+			        flex: 50%;
+			        max-width: 50%;
+			    }
+			}
+
+			/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+			@media (max-width: 600px) {
+			    .column {
+			        -ms-flex: 100%;
+			        flex: 100%;
+			        max-width: 100%;
+			    }
+			}
+	</style>
+	<body>
+		<div class="header">
+		  <p>Samsung NX3000</p>
+		</div>
+
+		<!-- Photo Grid -->
+		<div class="row"> 
+		  <div class="column">
+		    <img src="images/sled.jpg" style="width:100%">
+		    <img src="images/carretera1.jpg" style="width:100%">
+		    <img src="images/tallin.jpg" style="width:100%">
+		    
+		  </div>
+		  <div class="column">
+		    <img src="images/trolltunga.jpg" style="width:100%">
+		    <img src="images/copenhague.jpg" style="width:100%">
+		    <img src="images/holanda.jpg" style="width:100%">
+		    <img src="images/carretera2.jpg" style="width:100%">
+		    
+		  </div>  
+		  <div class="column">
+		    <img src="images/paris.jpg" style="width:100%">
+		    <img src="images/santander.jpg" style="width:100%">
+		    <img src="images/sled.jpg" style="width:100%">
+		  </div>
+
+		  <div class="column">
+		    <img src="images/florencia.jpg" style="width:100%">
+		    <img src="images/catedrales.jpg" style="width:100%">
+		    <img src="images/tren.jpg" style="width:100%">
+		    <img src="images/pulpit.jpg" style="width:100%">
+		  </div>
+		</div>
+<!--
+1. hover with opactiy and title over pic
+2. click on image, zoom with title underneath
+-->  
+
+	</body>
+</html>

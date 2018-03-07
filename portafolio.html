@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<title> Gracia Covarrubias - Portafolio </title>
+	<link rel="icon" type="image/png" href="images/monogram.png" />
+	<style>
+			* {
+			    box-sizing: border-box;
+			}
+
+			body {
+			    margin: 0;
+			    font-family: Lato;
+			}
+
+			.header {
+			    text-align: center;
+			    padding: 32px;
+			}
+
+			.row {
+			    display: -ms-flexbox; /* IE10 */
+			    display: flex;
+			    -ms-flex-wrap: wrap; /* IE10 */
+			    flex-wrap: wrap;
+			    padding: 0 4px;
+			}
+
+			/* Create four equal columns that sits next to each other */
+			.column {
+			    -ms-flex: 25%; /* IE10 */
+			    flex: 25%;
+			    max-width: 25%;
+			    padding: 0 4px;
+			}
+
+			.column img {
+			    margin-top: 8px;
+			    vertical-align: middle;
+			}
+
+			/* Responsive layout - makes a two column-layout instead of four columns */
+			@media (max-width: 800px) {
+			    .column {
+			        -ms-flex: 50%;
+			        flex: 50%;
+			        max-width: 50%;
+			    }
+			}
+
+			/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+			@media (max-width: 600px) {
+			    .column {
+			        -ms-flex: 100%;
+			        flex: 100%;
+			        max-width: 100%;
+			    }
+			}
+	</style>
+	<body>
+		<div class="header">
+		  <p>DISEÑO UC</p>
+		</div>
+
+		<!-- Photo Grid -->
+		<div class="row"> 
+		  <div class="column">
+		    <img src="images/portafolio/afiche.jpg" style="width:100%" >
+		    <img src="images/portafolio/caratula.jpg" style="width:100%">
+		    
+		  </div>
+
+		  <div class="column">
+			<img src="images/portafolio/editorial.jpg" style="width:100%">
+			<img src="images/portafolio/lampara.jpg" style="width:100%">
+			
+		    
+		  </div>  
+		  <div class="column">
+		    <img src="images/portafolio/skate.png" style="width:100%">
+		    <img src="images/portafolio/urke.jpg" style="width:100%">
+		  </div>
+
+		  <div class="column">
+		    <img src="images/portafolio/darhogar.jpg" style="width:100%">
+		    <img src="images/portafolio/pattern.jpg" style="width:100%">
+		    
+		  </div>
+		</div>
+
+		  <div id="modal01" class="w3-modal w3-sand" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-hover-pale-red w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"  >
+      <img id="img01" class="w3-image w3-container" style="height: 400px" >
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+		</div>
+<!--
+1. hover with opactiy and title over pic
+2. click on image, zoom with title underneath
+-->  
+
+	</body>
+</html>
